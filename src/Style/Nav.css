@@ -1,0 +1,88 @@
+.Nav {
+  width: 100vw;
+  height: 10vh;
+  color: white;
+  position: fixed;
+  -webkit-text-stroke: 0.02rem #0e0c0d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: linear-gradient(rgb(10, 199, 35), rgb(8, 8, 8));
+}
+.Nav section:hover {
+  color: rgb(205, 169, 50);
+}
+.Logo img {
+  width: auto;
+  height: 10vh;
+  object-fit: contain;
+}
+.Logo img:hover {
+  filter: drop-shadow(0 0 2px rgb(205, 169, 50));
+}
+.Opcion {
+  width: 60vw;
+  height: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Open {
+  width: 0;
+  height: 0;
+  position: fixed;
+  inset: 0;
+  margin: 0 auto;
+
+  z-index: 99;
+  background: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: Open 1s forwards;
+}
+@keyframes Open {
+  0% {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 100%;
+  }
+
+  100% {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+.Open div {
+  width: clamp(200px, 1080px, 50vw);
+  height: 50vh;
+  font-size: 1.5rem;
+}
+.Opcion-Open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Opcion-Open section:hover {
+  color: greenyellow;
+  text-decoration: underline;
+}
+.Closer {
+  text-align: end;
+}
+.Closer:hover {
+  color: greenyellow;
+}
+.Close {
+  display: none;
+}
+@media (width<500px) {
+  .Opcion {
+    display: none;
+  }
+}

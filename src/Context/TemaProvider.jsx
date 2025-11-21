@@ -2,12 +2,21 @@ import { TemaContext } from "./TemaContext";
 import { useState } from "react";
 
 function TemaProvider({ children }) {
-  const [name, Setname] = useState(1);
-  const changeName = () => {
-    Setname(name + 1);
+  const [Close, setClose] = useState(false);
+  const X = () => {
+    setClose(!Close);
+  };
+  const opcion = () => {
+    return (
+      <>
+        <section>Inicio</section>
+        <section>Habilidades</section>
+        <section>Proyectos</section>
+      </>
+    );
   };
   return (
-    <TemaContext.Provider value={{ name, changeName }}>
+    <TemaContext.Provider value={{ Close, X, opcion }}>
       {children}
     </TemaContext.Provider>
   );
