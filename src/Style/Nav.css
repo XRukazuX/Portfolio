@@ -99,23 +99,7 @@
   color: greenyellow;
 }
 .Close {
-  width: 100vh;
-  height: 100vh;
-  background-color: black;
-  animation: close 1s forwards;
-}
-@keyframes close {
-  0% {
-    transform: scale(1);
-    border-radius: 0;
-  }
-  99% {
-    transform: scale(0);
-    border-radius: 100%;
-  }
-  100% {
-    display: none;
-  }
+  display: none;
 }
 @media (width<500px) {
   .Opcion {
