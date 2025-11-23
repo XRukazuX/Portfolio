@@ -23,15 +23,15 @@
 .Opcion {
   width: 60vw;
   height: auto;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .Open {
-  width: 0;
-  height: 0;
+  width: 100vh;
+  height: 100vh;
   position: fixed;
   inset: 0;
   margin: 0 auto;
@@ -42,16 +42,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(0);
   animation: Open 1s forwards;
 }
 @keyframes Open {
   0% {
-    width: 50vw;
-    height: 50vh;
+    transform: scale(0);
     border-radius: 100%;
   }
 
   100% {
+    transform: scale(1);
     width: 100vw;
     height: 100vh;
     border-radius: 0;
@@ -60,7 +61,7 @@
 .Open div {
   width: clamp(200px, 1080px, 50vw);
   height: 50vh;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .Opcion-Open {
   display: flex;
@@ -68,9 +69,28 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.Opcion-Open section {
+  position: relative;
+}
 .Opcion-Open section:hover {
-  color: greenyellow;
+  color: #ffffff;
   text-decoration: underline;
+}
+.Opcion-Open section:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 1s ease;
+  background-image: url("../Icons/Tenta.png");
+  filter: hue-rotate(120deg);
+  background-size: cover;
+  background-position: center;
+}
+.Opcion-Open section:hover:after {
+  transform: scaleY(1);
 }
 .Closer {
   text-align: end;
@@ -79,7 +99,23 @@
   color: greenyellow;
 }
 .Close {
-  display: none;
+  width: 100vh;
+  height: 100vh;
+  background-color: black;
+  animation: close 1s forwards;
+}
+@keyframes close {
+  0% {
+    transform: scale(1);
+    border-radius: 0;
+  }
+  99% {
+    transform: scale(0);
+    border-radius: 100%;
+  }
+  100% {
+    display: none;
+  }
 }
 @media (width<500px) {
   .Opcion {
