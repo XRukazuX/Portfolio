@@ -2,7 +2,6 @@
   width: 100vw;
   height: 10vh;
   color: white;
-  position: fixed;
   -webkit-text-stroke: 0.02rem #0e0c0d;
   display: flex;
   flex-direction: row;
