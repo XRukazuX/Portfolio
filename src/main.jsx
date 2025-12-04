@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import TemaProvider from "./Context/TemaProvider";
 import InfoProvider from "./Context/InfoProvider.jsx";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./Style/index.css";
 import App from "./App.jsx";
 

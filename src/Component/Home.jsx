@@ -1,9 +1,13 @@
 import { useContext, useEffect, useState } from "react";
 import { InfoContext } from "../Context/TemaContext";
+import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
 import "../Style/Home.css";
 function Home() {
   const { Info } = useContext(InfoContext);
-
+  const list = (item, i) => {
+    return <ListGroup.Item key={i}>{item}</ListGroup.Item>;
+  };
   return (
     <>
       <div className="Info">
@@ -15,12 +19,10 @@ function Home() {
           interfaces web atractivas y funcionales.
         </p>
         <section className="Perfil"></section>
-        <section className="Skill">Mis Habilidades: </section>
-        <div className="marquee">
-          <span>
-            HTML5 💻 - CSS 🎨 - JavaScript ⚡ - React ⚛️ - Node 🟢 - Express 🚀
-          </span>
-        </div>
+        <Card style={{ width: "18rem", maxHeight: "18rem" }}>
+          <Card.Title>Frontend</Card.Title>
+          <ListGroup>{Info.frontend.map(list)}</ListGroup>
+        </Card>
       </div>
     </>
   );

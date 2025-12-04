@@ -9,7 +9,17 @@
 .Perfil:hover {
   background: url("../Icons/henrycraft.jpg") center / contain no-repeat;
 }
-.Skill {
+.card-title {
+  text-align: center;
+}
+.list-group-item {
+  border: none;
+}
+.list-group-item::before {
+  content: "⟐";
+  color: red;
+}
+/*.Skill {
   width: 100vw;
 }
 .Skill::after {
@@ -58,3 +68,4 @@
     transform: translateX(-100%);
   }
 }
+*/

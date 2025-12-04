@@ -2,14 +2,13 @@ import { InfoContext } from "./TemaContext";
 
 function InfoProvider({ children }) {
   const Info = {
-    name: "Lucas",
-    skills: [
-      "HTML5 💻",
-      "CSS 🎨",
-      "JavaScript ⚡",
-      "React.js ⚛️",
-      "Node.js 🟢",
-      "Express.js 🚀",
+    frontend: ["HTML5 💻", "CSS 🎨", "JavaScript ⚡", "React.js ⚛️"],
+    backend: ["Node.js 🟢", "Express.js 🚀"],
+    tools: [
+      "Git & GitHub 🌐",
+      "NPM / Yarn 📦",
+      "Figma / Diseño UI 🎨",
+      "VSCode ✏️",
     ],
   };
   return (
