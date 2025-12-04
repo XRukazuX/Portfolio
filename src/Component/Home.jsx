@@ -11,18 +11,44 @@ function Home() {
   return (
     <>
       <div className="Info">
-        <h1>Hola, soy Lucas</h1>
-        <p>
-          Soy alguien que busca aventurarse en el apasionante mundo de la
-          tecnología, especialmente en el <strong>desarrollo frontend</strong>.
-          Me encanta aprender nuevas herramientas y técnicas para crear
-          interfaces web atractivas y funcionales.
-        </p>
-        <section className="Perfil"></section>
-        <Card style={{ width: "18rem", maxHeight: "18rem" }}>
-          <Card.Title>Frontend</Card.Title>
-          <ListGroup>{Info.frontend.map(list)}</ListGroup>
-        </Card>
+        <div className="Show">
+          <section>
+            <h1>Hola, soy Lucas</h1>
+            <p>
+              Soy alguien que busca aventurarse en el apasionante mundo de la
+              tecnología, especialmente en el{" "}
+              <strong>desarrollo frontend</strong>. Me encanta aprender nuevas
+              herramientas y técnicas para crear interfaces web atractivas y
+              funcionales.
+            </p>
+          </section>
+          <section className="Perfil"></section>
+        </div>
+        <section className="Skill">
+          <Card
+            className="Card-origin"
+            style={{ width: "18rem", minHeight: "14rem" }}
+          >
+            <Card.Title>Frontend</Card.Title>
+            <ListGroup>{Info.frontend.map(list)}</ListGroup>
+          </Card>
+          <Card
+            className="Card-origin"
+            style={{ width: "18rem", minHeight: "14rem" }}
+          >
+            <Card.Title>Backend</Card.Title>
+            <ListGroup style={{ color: "red" }}>
+              {Info.backend.map(list)}
+            </ListGroup>
+          </Card>
+          <Card
+            className="Card-origin"
+            style={{ width: "18rem", minHeight: "14rem" }}
+          >
+            <Card.Title>Tools</Card.Title>
+            <ListGroup>{Info.tools.map(list)}</ListGroup>
+          </Card>
+        </section>
       </div>
     </>
   );

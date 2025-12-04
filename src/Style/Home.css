@@ -1,8 +1,15 @@
 .Info {
   width: 100vw;
+  height: auto;
+}
+.Show {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
 }
 .Perfil {
-  width: 100vw;
+  width: 30vw;
   height: 30vh;
   background: url("../Icons/henry.jpg") center / contain no-repeat;
 }
@@ -14,58 +21,28 @@
 }
 .list-group-item {
   border: none;
+  background-color: transparent;
 }
 .list-group-item::before {
   content: "⟐";
-  color: red;
+  color: currentColor;
 }
-/*.Skill {
+.card {
+  border-radius: 20px;
+  border: black solid 2px;
+  transition: transform 1s ease;
+}
+.card:hover {
+  box-shadow: 2px 2px 15px black;
+  transform: translateX(5px) translateY(5px);
+}
+.Skill {
   width: 100vw;
+  height: auto;
+  min-height: 14rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(0, 18rem));
+  grid-template-rows: auto;
+  justify-content: center;
 }
-.Skill::after {
-  content: "";
-  font-weight: bold;
-  animation: skill 20s forwards infinite;
-}
-@keyframes skill {
-  0% {
-    content: "HTML5 💻";
-  }
-  20% {
-    content: "CSS 🎨";
-  }
-  40% {
-    content: "JavaScript ⚡";
-  }
-  60% {
-    content: "React.js ⚛️";
-  }
-  80% {
-    content: "Node.js 🟢";
-  }
-  100% {
-    content: "Express.js 🚀";
-  }
-}
-
-.marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  width: auto;
-}
-
-.marquee span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: move 20s linear infinite;
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-*/
