@@ -2,20 +2,7 @@
   width: 100vw;
   height: auto;
 }
-.Show {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  height: auto;
-}
-.Perfil {
-  width: 30vw;
-  height: 30vh;
-  background: url("../Icons/henry.jpg") center / contain no-repeat;
-}
-.Perfil:hover {
-  background: url("../Icons/henrycraft.jpg") center / contain no-repeat;
-}
+
 .card-title {
   text-align: center;
 }
@@ -36,6 +23,7 @@
   box-shadow: 2px 2px 15px black;
   transform: translateX(5px) translateY(5px);
 }
+
 .Skill {
   width: 100vw;
   height: auto;
@@ -45,4 +33,24 @@
   grid-template-columns: repeat(auto-fit, minmax(0, 18rem));
   grid-template-rows: auto;
   justify-content: center;
+}
+.Skill:has(.card:hover) .card:not(:hover) {
+  opacity: 0.5;
+  transform: scale(0.9);
+  background: gainsboro;
+}
+.Show {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+}
+
+.Perfil {
+  width: 30vw;
+  height: 30vh;
+  background: url("../Icons/henry.jpg") center / contain no-repeat;
+}
+.Perfil:hover {
+  background: url("../Icons/henrycraft.jpg") center / contain no-repeat;
 }
