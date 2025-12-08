@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { InfoContext } from "../Context/TemaContext";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import Proyect from "./Proyect";
 import "../Style/Home.css";
 function Home() {
   const { Info } = useContext(InfoContext);
@@ -50,6 +51,7 @@ function Home() {
           </Card>
         </section>
       </div>
+      <Proyect />
     </>
   );
 }
