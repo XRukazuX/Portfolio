@@ -100,7 +100,7 @@
 .Close {
   display: none;
 }
-@media (width<500px) {
+@media (width<550px) {
   .Opcion {
     display: none;
   }

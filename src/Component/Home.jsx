@@ -12,7 +12,7 @@ function Home() {
     <>
       <div className="Info">
         <div className="Show">
-          <section>
+          <section className="Description">
             <h1>Hola, soy Lucas</h1>
             <p>
               Soy alguien que busca aventurarse en el apasionante mundo de la

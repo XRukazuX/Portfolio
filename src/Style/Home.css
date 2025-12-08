@@ -1,6 +1,7 @@
 .Info {
   width: 100vw;
   height: auto;
+  margin-top: 1rem;
 }
 
 .card-title {
@@ -29,6 +30,7 @@
   height: auto;
   min-height: 14rem;
   display: grid;
+  margin-top: 1rem;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(0, 18rem));
   grid-template-rows: auto;
@@ -42,13 +44,25 @@
 .Show {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  min-width: 350px;
   height: auto;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+/* Ajustes para Description */
+.Description {
+  flex: 2 1 350px; /* Crece más que Perfil y nunca baja de 350px */
 }
 
 .Perfil {
-  width: 30vw;
-  height: 30vh;
+  width: 100%;
+  height: auto;
+  flex: 1 1 280px; /* Ocupa menos que Description y baja antes */
+  min-height: 280px; /* solo para visualizar el espacio */
   background: url("../Icons/henry.jpg") center / contain no-repeat;
 }
 .Perfil:hover {
