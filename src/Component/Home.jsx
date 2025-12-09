@@ -3,6 +3,9 @@ import { InfoContext } from "../Context/TemaContext";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import Proyect from "./Proyect";
+import { CiLinkedin } from "react-icons/ci";
+import { IoLogoLinkedin } from "react-icons/io";
+
 import "../Style/Home.css";
 function Home() {
   const { Info } = useContext(InfoContext);
@@ -25,6 +28,12 @@ function Home() {
           </section>
           <section className="Perfil"></section>
         </div>
+        <section>link</section>
+        <a href="https://www.npmjs.com/package/react-icons">
+          <CiLinkedin className="icons" />
+        </a>
+        <IoLogoLinkedin />
+
         <section className="Skill">
           <Card
             className="Card-origin"

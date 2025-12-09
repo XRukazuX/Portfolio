@@ -9,6 +9,11 @@ import screen4 from "../Icons/fullscreen-Dado.png";
 import mobile4 from "../Icons/Samsung Galaxy S8-Dado.png";
 
 function InfoProvider({ children }) {
+  const Link = {
+    linkedin:
+      "https://www.linkedin.com/in/lucas-ariel-mamani-pe%C3%B1a-829082243/",
+    git: "https://github.com/XRukazuX",
+  };
   const Info = {
     frontend: ["HTML5 💻", "CSS 🎨", "JavaScript ⚡", "React.js ⚛️"],
     backend: ["Node.js 🟢", "Express.js 🚀"],

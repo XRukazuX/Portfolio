@@ -68,3 +68,10 @@
 .Perfil:hover {
   background: url("../Icons/henrycraft.jpg") center / contain no-repeat;
 }
+.icons {
+  font-size: clamp(3rem, 15vw, 4rem);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
