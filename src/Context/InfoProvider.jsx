@@ -7,12 +7,14 @@ import screen3 from "../Icons/fullscreen-Pics.png";
 import mobile3 from "../Icons/Samsung Galaxy S8-Pics.png";
 import screen4 from "../Icons/fullscreen-Dado.png";
 import mobile4 from "../Icons/Samsung Galaxy S8-Dado.png";
+import { useState } from "react";
 
 function InfoProvider({ children }) {
   const Link = {
     linkedin:
       "https://www.linkedin.com/in/lucas-ariel-mamani-pe%C3%B1a-829082243/",
     git: "https://github.com/XRukazuX",
+    mail: "lucas_mamani_12@hotmail.com",
   };
   const Info = {
     frontend: ["HTML5 💻", "CSS 🎨", "JavaScript ⚡", "React.js ⚛️"],
@@ -61,8 +63,12 @@ function InfoProvider({ children }) {
       netlify: "https://dados-eldritch.netlify.app/",
     },
   };
+  const [Mode, setMode] = useState(true);
+  const changeMode = () => {
+    setMode(!Mode);
+  };
   return (
-    <InfoContext.Provider value={{ Info, Proyect }}>
+    <InfoContext.Provider value={{ Info, Proyect, Mode, changeMode }}>
       {children}
     </InfoContext.Provider>
   );

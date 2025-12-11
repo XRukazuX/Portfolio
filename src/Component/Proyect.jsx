@@ -4,6 +4,16 @@ import "../Style/Proyect.css";
 function Proyect() {
   const { Proyect } = useContext(InfoContext);
   console.log(Proyect);
-  return <></>;
+  return (
+    <>
+      <div className="Card">
+        <img src={Proyect.one.mobile} alt="Proyecto" className="Diseño" />
+        <details className="scrol">
+          <summary>{Proyect.one.title}</summary>
+          {Proyect.one.description}
+        </details>
+      </div>
+    </>
+  );
 }
 export default Proyect;

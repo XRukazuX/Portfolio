@@ -4,11 +4,12 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import Proyect from "./Proyect";
 import { CiLinkedin } from "react-icons/ci";
-import { IoLogoLinkedin } from "react-icons/io";
+import { IoIosMail } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
 
 import "../Style/Home.css";
 function Home() {
-  const { Info } = useContext(InfoContext);
+  const { Info, Mode } = useContext(InfoContext);
   const list = (item, i) => {
     return <ListGroup.Item key={i}>{item}</ListGroup.Item>;
   };
@@ -20,19 +21,21 @@ function Home() {
             <h1>Hola, soy Lucas</h1>
             <p>
               Soy alguien que busca aventurarse en el apasionante mundo de la
-              tecnología, especialmente en el{" "}
-              <strong>desarrollo frontend</strong>. Me encanta aprender nuevas
+              tecnología, especialmente en el
+              <strong> desarrollo frontend</strong>. Me encanta aprender nuevas
               herramientas y técnicas para crear interfaces web atractivas y
               funcionales.
             </p>
+
+            <section className="Links">
+              <CiLinkedin className="icons" color={Mode ? "black" : "white"} />
+              <IoIosMail className="icons" />
+              <FaGithub className="icons" />
+            </section>
+            <hr />
           </section>
           <section className="Perfil"></section>
         </div>
-        <section>link</section>
-        <a href="https://www.npmjs.com/package/react-icons">
-          <CiLinkedin className="icons" />
-        </a>
-        <IoLogoLinkedin />
 
         <section className="Skill">
           <Card

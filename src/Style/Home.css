@@ -47,7 +47,7 @@
   justify-content: center;
   align-items: center;
   width: 70vw;
-  min-width: 350px;
+  min-width: 330px;
   height: auto;
   margin: 0 auto;
   font-size: 1.5rem;
@@ -64,6 +64,7 @@
   flex: 1 1 280px; /* Ocupa menos que Description y baja antes */
   min-height: 280px; /* solo para visualizar el espacio */
   background: url("../Icons/henry.jpg") center / contain no-repeat;
+  clip-path: ellipse(20% 50% at 50% 50%);
 }
 .Perfil:hover {
   background: url("../Icons/henrycraft.jpg") center / contain no-repeat;
@@ -74,4 +75,14 @@
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.Links {
+  width: clamp(250px, 50%, 1080px);
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
