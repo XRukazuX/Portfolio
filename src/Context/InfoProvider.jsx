@@ -31,6 +31,7 @@ function InfoProvider({ children }) {
       "NPM / Yarn 📦",
       "Figma / Diseño UI 🎨",
       "VSCode ✏️",
+      "Netlify ☁️",
     ],
   };
   const Proyect = {
