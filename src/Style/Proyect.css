@@ -1,6 +1,4 @@
 .Card {
-  width: 30vw;
-  height: 30vh;
   border: 4px black solid;
   position: relative;
   border-radius: 20px;
@@ -10,6 +8,15 @@
 }
 .Card:hover {
   filter: contrast(100%) grayscale(0%);
+}
+.Proyect-conteiner {
+  width: 100vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 20rem));
+  grid-auto-rows: minmax(0, 15rem);
+  gap: 2rem;
+  justify-content: center;
 }
 .Diseño {
   width: 100%;

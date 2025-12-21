@@ -4,7 +4,22 @@ import { useContext } from "react";
 import { TemaContext } from "../Context/TemaContext";
 function Nav() {
   const { Close, X, opcion } = useContext(TemaContext);
+  const nav = document.querySelector(".Nav");
+  let lastScroll = 0;
 
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll) {
+      // Bajar → ocultar
+      nav.style.transform = "translateY(-100%)";
+    } else {
+      // Subir → mostrar
+      nav.style.transform = "translateY(0)";
+    }
+
+    lastScroll = currentScroll;
+  });
   return (
     <>
       <div className="Nav">

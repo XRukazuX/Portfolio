@@ -12,6 +12,7 @@ function TemaProvider({ children }) {
         <section>Inicio</section>
         <section>Habilidades</section>
         <section>Proyectos</section>
+        <section>Contacto</section>
       </>
     );
   };

@@ -34,43 +34,7 @@ function InfoProvider({ children }) {
       "Netlify ☁️",
     ],
   };
-  const Proyect = {
-    one: {
-      title: "Rick & Morty",
-      fullscreen: screen1,
-      mobile: mobile1,
-      description:
-        "Una página web interactiva que permite buscar personajes de Rick and Morty utilizando la API oficial. Al ingresar el nombre de un personaje, muestra información detallada como su especie, estado, género y ubicación, acompañada de la imagen correspondiente.",
-      git: "https://github.com/XRukazuX/Rick-Morty",
-      netlify: "https://infiniterick.netlify.app/",
-    },
-    two: {
-      title: "Calculadora",
-      fullscreen: screen2,
-      mobile: mobile2,
-      description: "Prototipo de calculadora usando dependencia Math.js.",
-      git: "https://github.com/XRukazuX/Calculadora",
-      netlify: "https://calculadora-0v.netlify.app/",
-    },
-    three: {
-      title: "Pics Waifu",
-      fullscreen: screen3,
-      mobile: mobile3,
-      description:
-        "Una página web que permite obtener imágenes de estilo anime utilizando la API Waifu.pics. Los usuarios pueden elegir entre imágenes individuales o grupales, y el tipo de imagen que desean recibir.",
-      git: "https://github.com/XRukazuX/image-generator",
-      netlify: "https://waifupics-proyect.netlify.app/",
-    },
-    four: {
-      title: "Dados-Eldritch Horror",
-      fullscreen: screen4,
-      mobile: mobile4,
-      description:
-        "Un simulador de dados para Eldritch Horror que permite lanzar tiradas normales o bendecidas, mostrando resultados de forma interactiva y clara.",
-      git: "https://github.com/XRukazuX/Dados-Eldritch",
-      netlify: "https://dados-eldritch.netlify.app/",
-    },
-  };
+
   const Proyects2 = [
     {
       title: "Rick & Morty",
@@ -113,7 +77,7 @@ function InfoProvider({ children }) {
     setMode(!Mode);
   };
   return (
-    <InfoContext.Provider value={{ Info, Proyect, Mode, changeMode }}>
+    <InfoContext.Provider value={{ Info, Mode, changeMode, Proyects2 }}>
       {children}
     </InfoContext.Provider>
   );
