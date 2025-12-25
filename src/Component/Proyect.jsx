@@ -32,7 +32,7 @@ function Proyect() {
                   <FaGithub />
                 </a>
               </span>
-              <div> {proyect.description}</div>
+              <p className="text"> {proyect.description}</p>
             </details>
           </div>
         ))}

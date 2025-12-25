@@ -3,13 +3,10 @@ import { InfoContext } from "../Context/TemaContext";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import Proyect from "./Proyect";
-import { CiLinkedin } from "react-icons/ci";
-import { IoIosMail } from "react-icons/io";
-import { FaGithub } from "react-icons/fa";
 
 import "../Style/Home.css";
 function Home() {
-  const { Info, Mode } = useContext(InfoContext);
+  const { Info } = useContext(InfoContext);
   const list = (item, i) => {
     return <ListGroup.Item key={i}>{item}</ListGroup.Item>;
   };
@@ -27,11 +24,6 @@ function Home() {
               funcionales.
             </p>
 
-            <section className="Links">
-              <CiLinkedin className="icons" color={Mode ? "black" : "white"} />
-              <IoIosMail className="icons" />
-              <FaGithub className="icons" />
-            </section>
             <hr />
           </section>
           <section className="Perfil"></section>

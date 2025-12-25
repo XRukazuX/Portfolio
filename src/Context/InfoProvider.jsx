@@ -32,6 +32,7 @@ function InfoProvider({ children }) {
       "Figma / Diseño UI 🎨",
       "VSCode ✏️",
       "Netlify ☁️",
+      "IA/ ChatGPT 🤖 (soporte en código y UX)",
     ],
   };
 

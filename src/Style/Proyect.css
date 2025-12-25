@@ -86,3 +86,12 @@ summary {
 .scrol[open] {
   overflow-y: auto;
 }
+.text {
+  font-size: 1.2rem; /* tamaño legible */
+  line-height: 1.4em; /* altura de línea cómoda */
+  text-align: left; /* ajusta el texto a ambos lados, uniforme */
+  word-spacing: normal; /* espacio entre palabras estándar */
+  letter-spacing: normal; /* espaciado entre letras normal */
+  word-break: break-word; /* evita overflow con palabras largas */
+  hyphens: auto; /* opcional: permite guiones para mejorar justificado */
+}
