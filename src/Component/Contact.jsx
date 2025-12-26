@@ -1,14 +1,18 @@
 import { CiLinkedin } from "react-icons/ci";
 import { IoIosMail } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
+import { useContext } from "react";
 import "../Style/Contact.css";
+import { InfoContext, TemaContext } from "../Context/TemaContext";
 
 function Contact() {
+  const { Link } = useContext(InfoContext);
+  const { ref } = useContext(TemaContext);
   return (
     <>
-      <div className="Contact">
+      <div className="Contact" ref={ref[3]}>
         <div className="Text">
-          <h1>Contactos</h1>
+          <h1 className="Title">Contactos</h1>
           <section>
             Siempre listo para aprender y crear experiencias web atractivas y
             funcionales.
@@ -16,9 +20,19 @@ function Contact() {
         </div>
         <div>
           <section className="Links">
-            <CiLinkedin className="icons" />
-            <IoIosMail className="icons" />
-            <FaGithub className="icons" />
+            <a href={Link.linkedin} target="_blank" rel="noopener noreferrer">
+              <CiLinkedin className="icons" />
+            </a>
+            <a
+              href={`mailto:${Link.mail}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoIosMail className="icons" />
+            </a>
+            <a href={Link.git} target="_blank" rel="noopener noreferrer">
+              <FaGithub className="icons" />
+            </a>
           </section>
         </div>
       </div>

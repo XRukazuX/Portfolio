@@ -77,8 +77,9 @@ function InfoProvider({ children }) {
   const changeMode = () => {
     setMode(!Mode);
   };
+
   return (
-    <InfoContext.Provider value={{ Info, Mode, changeMode, Proyects2 }}>
+    <InfoContext.Provider value={{ Info, Mode, changeMode, Proyects2, Link }}>
       {children}
     </InfoContext.Provider>
   );

@@ -1,5 +1,5 @@
-import { useContext, useEffect, useState } from "react";
-import { InfoContext } from "../Context/TemaContext";
+import { useContext, useRef } from "react";
+import { InfoContext, TemaContext } from "../Context/TemaContext";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import Proyect from "./Proyect";
@@ -7,13 +7,14 @@ import Proyect from "./Proyect";
 import "../Style/Home.css";
 function Home() {
   const { Info } = useContext(InfoContext);
+  const { ref } = useContext(TemaContext);
   const list = (item, i) => {
     return <ListGroup.Item key={i}>{item}</ListGroup.Item>;
   };
   return (
     <>
       <div className="Info">
-        <div className="Show">
+        <div className="Show" ref={ref[0]}>
           <section className="Description">
             <h1>Hola, soy Lucas</h1>
             <p>
@@ -28,8 +29,8 @@ function Home() {
           </section>
           <section className="Perfil"></section>
         </div>
-
-        <section className="Skill">
+        <h1 className="Title">Habilidades</h1>
+        <section className="Skill" ref={ref[1]}>
           <Card
             className="Card-origin"
             style={{ width: "18rem", minHeight: "14rem" }}

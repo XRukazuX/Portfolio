@@ -1,15 +1,18 @@
 .Contact {
-  width: 100vw;
+  width: 90vw;
   height: auto;
   text-align: center;
+  margin: 0 auto;
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
 .icons {
-  font-size: clamp(3rem, 15vw, 4rem);
+  font-size: clamp(3rem, 15vw, 5rem);
+  cursor: pointer;
+  user-select: none;
 }
 .Links {
-  width: clamp(250px, 50%, 1080px);
+  width: clamp(250px, 50vw, 1080px);
   height: auto;
   margin: 0 auto;
   display: flex;
@@ -19,4 +22,7 @@
 }
 .Text section {
   font-size: 1.5rem;
+}
+.Text {
+  margin-bottom: 2rem;
 }

@@ -4,7 +4,15 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
+.Title {
+  width: min(50vw, 350px);
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+  border-top: 2px black solid;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
 .card-title {
   text-align: center;
 }
@@ -66,6 +74,7 @@
   background: url("../Icons/henry.jpg") center / contain no-repeat;
   aspect-ratio: 1/1;
   clip-path: ellipse(30% 45% at 50% 50%);
+  transition: background-image 1s ease;
 }
 .Perfil:hover {
   background: url("../Icons/henrycraft.jpg") center / contain no-repeat;
