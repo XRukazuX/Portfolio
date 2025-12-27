@@ -22,6 +22,9 @@
 .Logo img:hover {
   filter: drop-shadow(0 0 2px rgb(205, 169, 50));
 }
+.mode:active {
+  color: rgb(10, 199, 35);
+}
 .Opcion {
   width: 80vw;
   height: auto;

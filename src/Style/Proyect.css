@@ -1,5 +1,5 @@
 .Card {
-  border: 4px black solid;
+  border: 4px solid;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -96,4 +96,11 @@ summary {
   letter-spacing: normal; /* espaciado entre letras normal */
   word-break: break-word; /* evita overflow con palabras largas */
   hyphens: auto; /* opcional: permite guiones para mejorar justificado */
+}
+.Proyect {
+  width: 100vw;
+  height: auto;
+}
+.dark .scrol {
+  color: rgb(15, 226, 61);
 }

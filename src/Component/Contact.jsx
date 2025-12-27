@@ -7,10 +7,10 @@ import { InfoContext, TemaContext } from "../Context/TemaContext";
 
 function Contact() {
   const { Link } = useContext(InfoContext);
-  const { ref } = useContext(TemaContext);
+  const { ref, Mode } = useContext(TemaContext);
   return (
     <>
-      <div className="Contact" ref={ref[3]}>
+      <div className={`Contact ${Mode ? "" : "dark"}`} ref={ref[3]}>
         <div className="Text">
           <h1 className="Title">Contactos</h1>
           <section>

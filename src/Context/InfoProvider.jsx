@@ -73,13 +73,9 @@ function InfoProvider({ children }) {
       netlify: "https://dados-eldritch.netlify.app/",
     },
   ];
-  const [Mode, setMode] = useState(true);
-  const changeMode = () => {
-    setMode(!Mode);
-  };
 
   return (
-    <InfoContext.Provider value={{ Info, Mode, changeMode, Proyects2, Link }}>
+    <InfoContext.Provider value={{ Info, Proyects2, Link }}>
       {children}
     </InfoContext.Provider>
   );

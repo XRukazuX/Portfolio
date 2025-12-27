@@ -1,27 +1,46 @@
 import { TemaContext } from "./TemaContext";
 import { useState, useRef } from "react";
+import { MdOutlineDarkMode } from "react-icons/md";
+import { LuSunMoon } from "react-icons/lu";
 
 function TemaProvider({ children }) {
   const [Close, setClose] = useState(false);
   const ref = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const Scroll = (ref) => {
-    ref.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    ref.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
   const X = () => {
     setClose(!Close);
   };
+  const [Mode, setMode] = useState(true);
+  const changeMode = () => {
+    setMode(!Mode);
+  };
   const opcion = () => {
     return (
       <>
-        <section onClick={() => Scroll(ref[0])}>Inicio</section>
-        <section onClick={() => Scroll(ref[1])}>Habilidades</section>
-        <section onClick={() => Scroll(ref[2])}>Proyectos</section>
-        <section onClick={() => Scroll(ref[3])}>Contacto</section>
+        <section onClick={() => (Scroll(ref[0]), setClose(false))}>
+          Inicio
+        </section>
+        <section onClick={() => (Scroll(ref[1]), setClose(false))}>
+          Habilidades
+        </section>
+        <section onClick={() => (Scroll(ref[2]), setClose(false))}>
+          Proyectos
+        </section>
+        <section onClick={() => (Scroll(ref[3]), setClose(false))}>
+          Contacto
+        </section>
+        {Mode ? (
+          <MdOutlineDarkMode onClick={changeMode} className="mode" />
+        ) : (
+          <LuSunMoon onClick={changeMode} className="mode" />
+        )}
       </>
     );
   };
   return (
-    <TemaContext.Provider value={{ Close, X, opcion, ref }}>
+    <TemaContext.Provider value={{ Close, X, opcion, Mode, ref }}>
       {children}
     </TemaContext.Provider>
   );

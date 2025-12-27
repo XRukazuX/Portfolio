@@ -1,15 +1,15 @@
 .Info {
   width: 100vw;
   height: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .Title {
   width: min(50vw, 350px);
   text-align: center;
   margin: 0 auto;
   height: auto;
-  border-top: 2px black solid;
+  border-top: 2px solid;
   padding-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -85,4 +85,13 @@
 a {
   color: inherit;
   text-decoration: none;
+}
+.dark {
+  background: black;
+  color: green;
+}
+.dark .Skill .card {
+  background: gainsboro;
+  border: green 2px solid;
+  color: green;
 }

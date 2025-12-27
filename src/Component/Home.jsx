@@ -7,15 +7,15 @@ import Proyect from "./Proyect";
 import "../Style/Home.css";
 function Home() {
   const { Info } = useContext(InfoContext);
-  const { ref } = useContext(TemaContext);
+  const { ref, Mode } = useContext(TemaContext);
   const list = (item, i) => {
     return <ListGroup.Item key={i}>{item}</ListGroup.Item>;
   };
   return (
     <>
-      <div className="Info">
-        <div className="Show" ref={ref[0]}>
-          <section className="Description">
+      <div className={`Info ${Mode ? "" : "dark"}`}>
+        <div className="Show">
+          <section className="Description" ref={ref[0]}>
             <h1>Hola, soy Lucas</h1>
             <p>
               Soy alguien que busca aventurarse en el apasionante mundo de la
@@ -29,8 +29,10 @@ function Home() {
           </section>
           <section className="Perfil"></section>
         </div>
-        <h1 className="Title">Habilidades</h1>
-        <section className="Skill" ref={ref[1]}>
+        <h1 className="Title" ref={ref[1]}>
+          Habilidades
+        </h1>
+        <section className="Skill">
           <Card
             className="Card-origin"
             style={{ width: "18rem", minHeight: "14rem" }}

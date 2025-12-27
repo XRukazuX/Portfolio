@@ -2,7 +2,6 @@ import "../Style/Nav.css";
 import logo from "../Icons/logo2.png";
 import { useContext } from "react";
 import { TemaContext } from "../Context/TemaContext";
-import { MdOutlineDarkMode } from "react-icons/md";
 
 function Nav() {
   const { Close, X, opcion } = useContext(TemaContext);
@@ -17,9 +16,7 @@ function Nav() {
         >
           <img src={logo} alt="Logo" />
         </div>
-        <div className="Opcion">
-          {opcion()} <MdOutlineDarkMode />
-        </div>
+        <div className="Opcion">{opcion()}</div>
       </div>
       <div className={Close ? "Open" : "Close"}>
         <div>
