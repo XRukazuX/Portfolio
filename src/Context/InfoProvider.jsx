@@ -7,7 +7,6 @@ import screen3 from "../Icons/fullscreen-Pics.png";
 import mobile3 from "../Icons/Samsung Galaxy S8-Pics.png";
 import screen4 from "../Icons/fullscreen-Dado.png";
 import mobile4 from "../Icons/Samsung Galaxy S8-Dado.png";
-import { useState } from "react";
 
 function InfoProvider({ children }) {
   const Link = {
