@@ -9,7 +9,6 @@ Este proyecto es mi portafolio frontend personal, donde presento mis proyectos, 
 - JavaSript
 - Git & GitHub
 - React
-- React
 - Vite
 - React-Bootstrap
 - Bootstrap (dependencia base)
