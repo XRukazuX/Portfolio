@@ -4,7 +4,7 @@
   border-radius: 20px;
   overflow: hidden;
   filter: contrast(100%) grayscale(100%);
-  transition: filter 2s ease;
+  transition: filter 0.5s ease;
 }
 .Card:hover {
   filter: contrast(100%) grayscale(0%);
@@ -41,13 +41,13 @@
   font-size: 2rem;
 }
 .icon-wrapper {
-  display: inline-flex; /* permite centrar y mantener tamaño del ícono */
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 2.5rem; /* tamaño del contenedor */
-  height: 2.5rem; /* tamaño del contenedor */
+  width: 2.5rem;
+  height: 2.5rem;
   border: 2px solid #333;
-  border-radius: 50%; /* borde redondeado perfecto */
+  border-radius: 50%;
 }
 .icon-wrapper:hover {
   background: whitesmoke;
@@ -89,13 +89,13 @@ summary {
   overflow-y: auto;
 }
 .text {
-  font-size: 1.2rem; /* tamaño legible */
-  line-height: 1.4em; /* altura de línea cómoda */
-  text-align: left; /* ajusta el texto a ambos lados, uniforme */
-  word-spacing: normal; /* espacio entre palabras estándar */
-  letter-spacing: normal; /* espaciado entre letras normal */
-  word-break: break-word; /* evita overflow con palabras largas */
-  hyphens: auto; /* opcional: permite guiones para mejorar justificado */
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+  word-break: break-word;
+  hyphens: auto;
 }
 .Proyect {
   width: 100vw;
