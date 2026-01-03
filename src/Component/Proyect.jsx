@@ -10,7 +10,7 @@ function Proyect() {
   const { ref, Mode } = useContext(TemaContext);
   return (
     <>
-      <div className={`Proyect ${Mode ? "" : "dark"}`}>
+      <div className={`Proyect animation ${Mode ? "" : "dark"}`}>
         <h1 className="Title" ref={ref[2]}>
           Proyectos
         </h1>

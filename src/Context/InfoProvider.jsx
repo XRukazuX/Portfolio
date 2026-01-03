@@ -54,15 +54,6 @@ function InfoProvider({ children }) {
       netlify: "https://calculadora-0v.netlify.app/",
     },
     {
-      title: "Pics Waifu",
-      fullscreen: screen3,
-      mobile: mobile3,
-      description:
-        "Una página web que permite obtener imágenes de estilo anime utilizando la API Waifu.pics. Los usuarios pueden elegir entre imágenes individuales o grupales, y el tipo de imagen que desean recibir.",
-      git: "https://github.com/XRukazuX/image-generator",
-      netlify: "https://waifupics-proyect.netlify.app/",
-    },
-    {
       title: "Dados-Eldritch Horror",
       fullscreen: screen4,
       mobile: mobile4,

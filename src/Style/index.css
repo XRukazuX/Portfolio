@@ -2,3 +2,16 @@
   margin: 0;
   padding: 0;
 }
+.animation {
+  animation: scale linear forwards;
+  transform: scale(0.8);
+  opacity: 0.5;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+@keyframes scale {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

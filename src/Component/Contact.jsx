@@ -10,12 +10,18 @@ function Contact() {
   const { ref, Mode } = useContext(TemaContext);
   return (
     <>
-      <div className={`Contact ${Mode ? "" : "dark"}`} ref={ref[3]}>
+      <div className={`Contact animation ${Mode ? "" : "dark"}`} ref={ref[3]}>
         <div className="Text">
           <h1 className="Title">Contactos</h1>
           <section>
             Siempre listo para aprender y crear experiencias web atractivas y
-            funcionales.
+            funcionales. <br />
+            <strong>
+              ¿Tenés un proyecto en mente o querés trabajar conmigo?
+            </strong>
+            <br />
+            No dudes en contactarme, estaré encantado de aportar valor a tu
+            equipo o idea.
           </section>
         </div>
         <div>
