@@ -1,5 +1,3 @@
-import { useRef } from "react";
-
 import Nav from "./Component/Nav";
 import Home from "./Component/Home";
 import Contact from "./Component/Contact";
