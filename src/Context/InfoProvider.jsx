@@ -3,8 +3,8 @@ import screen1 from "../Icons/fullscreen-Rick.png";
 import mobile1 from "../Icons/Samsung Galaxy S8-Rick.png";
 import screen2 from "../Icons/fullscreen-Calculadora.png";
 import mobile2 from "../Icons/Samsung Galaxy S8-Calculadora.png";
-import screen3 from "../Icons/fullscreen-Pics.png";
-import mobile3 from "../Icons/Samsung Galaxy S8-Pics.png";
+import screen3 from "../Icons/fullscreen-Catapy.png";
+import mobile3 from "../Icons/Samsung Galaxy S8-Catapy.png";
 import screen4 from "../Icons/fullscreen-Dado.png";
 import mobile4 from "../Icons/Samsung Galaxy S8-Dado.png";
 
@@ -52,6 +52,15 @@ function InfoProvider({ children }) {
       description: "Prototipo de calculadora usando dependencia Math.js.",
       git: "https://github.com/XRukazuX/Calculadora",
       netlify: "https://calculadora-0v.netlify.app/",
+    },
+    {
+      title: "Catapy",
+      fullscreen: screen3,
+      mobile: mobile3,
+      description:
+        "Catapy es un prototipo de tienda online desarrollado con React y Vite, diseñado para experimentar con un carrito de compras completo. Permite visualizar productos, agregar o eliminar ítems del carrito, guardar la selección para continuar la compra y enviar pedidos de prueba vía WhatsApp. Todo esto se realiza de forma gratuita y segura, sin pagos ni envíos reales.",
+      git: "https://github.com/XRukazuX/E-Commerce",
+      netlify: "https://catapy.netlify.app/",
     },
     {
       title: "Dados-Eldritch Horror",
