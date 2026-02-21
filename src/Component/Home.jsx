@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 import { InfoContext, TemaContext } from "../Context/TemaContext";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
