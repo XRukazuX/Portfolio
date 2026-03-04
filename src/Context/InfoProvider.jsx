@@ -7,7 +7,8 @@ import screen3 from "../Icons/fullscreen-Catapy.png";
 import mobile3 from "../Icons/Samsung Galaxy S8-Catapy.png";
 import screen4 from "../Icons/fullscreen-Dado.png";
 import mobile4 from "../Icons/Samsung Galaxy S8-Dado.png";
-
+import screen5 from "../Icons/fullscreen-Volt.png";
+import mobile5 from "../Icons/Samsung Galaxy S8-Volt.png";
 function InfoProvider({ children }) {
   const Link = {
     linkedin:
@@ -36,6 +37,15 @@ function InfoProvider({ children }) {
   };
 
   const Proyects2 = [
+    {
+      title: "Volt",
+      fullscreen: screen5,
+      mobile: mobile5,
+      description:
+        "Aplicación frontend de e-commerce desarrollada con React y Vite que consume una API REST propia. Implementa autenticación con JWT, rutas protegidas y carrito de compras, demostrando integración completa entre frontend y backend.",
+      git: "https://github.com/XRukazuX/CommerseApi",
+      netlify: "https://voltproyect.netlify.app/",
+    },
     {
       title: "Rick & Morty",
       fullscreen: screen1,
