@@ -11,10 +11,9 @@ import screen5 from "../Icons/fullscreen-Volt.png";
 import mobile5 from "../Icons/Samsung Galaxy S8-Volt.png";
 function InfoProvider({ children }) {
   const Link = {
-    linkedin:
-      "https://www.linkedin.com/in/lucas-ariel-mamani-pe%C3%B1a-829082243/",
+    linkedin: "https://www.linkedin.com/in/lucas-ariel-mamani-pe%C3%B1a/",
     git: "https://github.com/XRukazuX",
-    mail: "lucas_mamani_12@hotmail.com",
+    mail: "lucas.dev.codex@gmail.com",
   };
   const Info = {
     frontend: [
